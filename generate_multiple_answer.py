@@ -24,7 +24,7 @@ from scripts.prepare_alpaca import generate_prompt
 
 def main(
     prompt: str = "What food do lamas eat?",
-    input: str = "",
+    user_input: str = "",
     adapter_path: Path = Path("data/mydata-finetuned/lit_model_adapter_finetuned.pth"),
     checkpoint_dir: Path = Path(f"checkpoints/stabilityai/stablelm-base-alpha-3b"),
     quantize: Literal["llm.int8", "gptq.int4"] = None,
@@ -41,7 +41,7 @@ def main(
 
     Args:
         prompt: The prompt/instruction (Alpaca style).
-        input: Optional input (Alpaca style).
+        user_input: Optional input (Alpaca style).
         adapter_path: Path to the checkpoint with trained adapter weights, which are the output of
             `finetune/adapter.py`.
         checkpoint_dir: The path to the checkpoint folder with pretrained GPT weights.
@@ -95,13 +95,11 @@ def main(
     tokenizer = Tokenizer(checkpoint_dir)
 
     while True:
-        # Prompt for user input
-        prompt = input("Enter a prompt (or 'q' to quit): ")
-        if prompt == 'q':
-            break  # Exit the loop if 'q' is entered
-        
-        # Generate response
-        sample = {"instruction": prompt, "input": input}
+        user_input = input("Enter a prompt (or 'q' to quit): ")
+        if user_input.lower() == "q":
+            break
+
+        sample = {"instruction": prompt, "input": user_input}
         prompt = generate_prompt(sample)
         encoded = tokenizer.encode(prompt, device=model.device)
         prompt_length = encoded.size(0)
@@ -122,10 +120,13 @@ def main(
         model.reset_cache()
         output = tokenizer.decode(y)
         output = output.split("### Response:")[1].strip()
-        print(output)
+        fabric.print(output)
 
         tokens_generated = y.size(0) - prompt_length
-        print(f"\n\nTime for inference: {t:.02f} sec total, {tokens_generated / t:.02f} tokens/sec")
+        fabric.print(f"\n\nTime for inference: {t:.02f} sec total, {tokens_generated / t:.02f} tokens/sec", file=sys.stderr)
+        if fabric.device.type == "cuda":
+            fabric.print(f"Memory used: {torch.cuda.max_memory_allocated() / 1e9:.02f} GB", file=sys.stderr)
+
 
 if __name__ == "__main__":
     from jsonargparse import CLI
