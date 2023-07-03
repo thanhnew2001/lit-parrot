@@ -99,7 +99,7 @@ def main(
         if user_input.lower() == "q":
             break
 
-        sample = {"instruction": prompt, "input": user_input}
+        sample = {"instruction": user_input, "input": ""}
         prompt = generate_prompt(sample)
         encoded = tokenizer.encode(prompt, device=model.device)
         prompt_length = encoded.size(0)
