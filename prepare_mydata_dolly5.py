@@ -17,7 +17,7 @@ from lit_gpt.tokenizer import Tokenizer
 DATA_FILE_URL = "https://raw.githubusercontent.com/thanhnew2001/lit-parrot/main/dolly0_5.jsonl"
 DATA_FILE_NAME = "dolly0_5.jsonl"
 DESTINATION_PATH = Path("data/mydatadolly5")
-CHECKPOINT_DIR = Path("checkpoints/stabilityai/stablelm-base-alpha-3b")
+CHECKPOINT_DIR = Path("checkpoints/tiiuae/falcon-7b")
 TEST_SPLIT_SIZE = 2000
 IGNORE_INDEX = -1
 MASK_INPUTS = False  # as in alpaca-lora
