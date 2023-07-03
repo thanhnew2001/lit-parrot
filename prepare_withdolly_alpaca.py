@@ -14,11 +14,11 @@ sys.path.append(str(wd))
 
 from lit_gpt.tokenizer import Tokenizer
 
-DATA_FILE_URL = "https://huggingface.co/datasets/databricks/databricks-dolly-15k/resolve/main/databricks-dolly-15k.jsonl"
-DATA_FILE_NAME = "dolly_data_cleaned_archive.json"
-
-#DATA_FILE = "https://huggingface.co/datasets/databricks/databricks-dolly-15k/resolve/main/databricks-dolly-15k.jsonl"
+#DATA_FILE_URL = "https://huggingface.co/datasets/databricks/databricks-dolly-15k/resolve/main/databricks-dolly-15k.jsonl"
 #DATA_FILE_NAME = "dolly_data_cleaned_archive.json"
+
+DATA_FILE = "https://huggingface.co/datasets/databricks/databricks-dolly-15k/resolve/main/databricks-dolly-15k.jsonl"
+DATA_FILE_NAME = "dolly_data_cleaned_archive.json"
 
 DESTINATION_PATH = Path("data/dolly")
 CHECKPOINT_DIR = Path("checkpoints/stabilityai/stablelm-base-alpha-3b")
@@ -50,11 +50,15 @@ def prepare(
     data_file_path = destination_path / data_file_name
     print("Loading data file...")
     download_if_missing(data_file_path, data_file_url)
-    with open(data_file_path, "r", encoding="utf-8") as file:
-        data = json.load(file)
+    
+    tokenizer = Tokenizer(checkpoint_dir / "tokenizer.json", checkpoint_dir / "tokenizer_config.json")
 
-    print("Loading tokenizer...")
-    tokenizer = Tokenizer(checkpoint_dir)
+    with open(file_path, "r") as file:
+        data = file.readlines()
+        data = [json.loads(line) for line in data]
+    for item in data:
+        item["input"] = item.pop("context")
+        item["output"] = item.pop("response")
 
     # Partition the dataset into train and test
     train_split_size = len(data) - test_split_size
@@ -62,7 +66,6 @@ def prepare(
         data, lengths=(train_split_size, test_split_size), generator=torch.Generator().manual_seed(seed)
     )
     train_set, test_set = list(train_set), list(test_set)
-
     print(f"train has {len(train_set):,} samples")
     print(f"test has {len(test_set):,} samples")
 
