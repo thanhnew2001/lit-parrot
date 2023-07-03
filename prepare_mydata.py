@@ -14,9 +14,9 @@ sys.path.append(str(wd))
 
 from lit_gpt.tokenizer import Tokenizer
 
-DATA_FILE_URL = "https://raw.githubusercontent.com/tloen/alpaca-lora/main/alpaca_data_cleaned_archive.json"
-DATA_FILE_NAME = "alpaca_data_cleaned_archive.json"
-DESTINATION_PATH = Path("data/alpaca")
+DATA_FILE_URL = "https://raw.githubusercontent.com/thanhnew2001/lit-parrot/main/dengue_instruction.json"
+DATA_FILE_NAME = "dengue_instruction.json"
+DESTINATION_PATH = Path("data/mydata")
 CHECKPOINT_DIR = Path("checkpoints/stabilityai/stablelm-base-alpha-3b")
 TEST_SPLIT_SIZE = 2000
 IGNORE_INDEX = -1
