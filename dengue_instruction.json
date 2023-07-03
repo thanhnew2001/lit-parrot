@@ -1,8 +1,272 @@
 [
-    {
-        "instruction": "Arrange the given numbers in ascending order.",
-        "input": "2, 4, 0, 8, 3",
-        "output": "0, 2, 3, 4, 8"
-    },
-    ...
+{
+"instruction": "What is dengue fever?",
+"input": "",
+"output": "Dengue fever is a mosquito-borne viral infection that causes flu-like symptoms."
+},
+{
+"instruction": "How is dengue fever transmitted?",
+"input": "",
+"output": "Dengue fever is primarily transmitted through the bite of infected Aedes mosquitoes."
+},
+{
+"instruction": "What are the common symptoms of dengue fever?",
+"input": "",
+"output": "Common symptoms of dengue fever include high fever, severe headache, joint and muscle pain, rash, and fatigue."
+},
+{
+"instruction": "What is the incubation period of dengue fever?",
+"input": "",
+"output": "The incubation period for dengue fever is usually 4 to 7 days after being bitten by an infected mosquito."
+},
+{
+"instruction": "How can dengue fever be diagnosed?",
+"input": "",
+"output": "Dengue fever can be diagnosed through blood tests to detect the presence of dengue virus or antibodies."
+},
+{
+"instruction": "Is there a specific treatment for dengue fever?",
+"input": "",
+"output": "There is no specific antiviral treatment for dengue fever. Treatment mainly involves supportive care to relieve symptoms."
+},
+{
+"instruction": "How can dengue fever be prevented?",
+"input": "",
+"output": "Preventive measures for dengue fever include eliminating mosquito breeding sites, using mosquito repellents, and wearing protective clothing."
+},
+{
+"instruction": "What is severe dengue?",
+"input": "",
+"output": "Severe dengue is a potentially life-threatening form of the disease characterized by severe abdominal pain, persistent vomiting, bleeding, and organ impairment."
+},
+{
+"instruction": "Can dengue fever be fatal?",
+"input": "",
+"output": "Yes, dengue fever can be fatal, especially in cases of severe dengue or if proper medical care is not provided."
+},
+{
+"instruction": "Are there vaccines available for dengue fever?",
+"input": "",
+"output": "Yes, there are vaccines available for dengue fever. However, their availability and recommended usage may vary by country."
+},
+{
+"instruction": "Can dengue fever be transmitted from person to person?",
+"input": "",
+"output": "No, dengue fever is not directly transmitted from person to person. It requires a mosquito vector for transmission."
+},
+{
+"instruction": "What is the geographic distribution of dengue fever?",
+"input": "",
+"output": "Dengue fever is endemic in many tropical and subtropical regions around the world."
+},
+{
+"instruction": "What are some complications of dengue fever?",
+"input": "",
+"output": "Complications of dengue fever can include dengue hemorrhagic fever, organ damage, and in rare cases, death."
+},
+{
+"instruction": "Can dengue fever recur?",
+"input": "",
+"output": "Yes, dengue fever can recur. In fact, subsequent infections with different dengue virus serotypes can increase the risk of severe dengue."
+},
+{
+"instruction": "What is the best way to control dengue fever outbreaks?",
+"input": "",
+"output": "Effective control measures for dengue fever outbreaks involve community participation, mosquito control, and early detection and management of cases."
+},
+{
+"instruction": "Are pregnant women more susceptible to dengue fever?",
+"input": "",
+"output": "Pregnant women are at an increased risk of severe dengue and other complications if infected with dengue virus."
+},
+{
+"instruction": "Can dengue fever be transmitted through blood transfusion?",
+"input": "",
+"output": "Yes, dengue fever can be transmitted through blood transfusion if the donor's blood contains the virus."
+},
+{
+"instruction": "What are some natural remedies for dengue fever?",
+"input": "",
+"output": "While there are no specific natural remedies for dengue fever, staying hydrated and getting plenty of rest are important for recovery."
+},
+{
+"instruction": "What are the different serotypes of dengue virus?",
+"input": "",
+"output": "There are four different serotypes of dengue virus: DEN-1, DEN-2, DEN-3, and DEN-4."
+},
+{
+"instruction": "Can dengue fever cause long-term complications?",
+"input": "",
+"output": "In some cases, dengue fever can lead to long-term complications such as post-dengue fatigue syndrome or neurologic and cardiac abnormalities."
+},
+{
+"instruction": "Is dengue fever a notifiable disease?",
+"input": "",
+"output": "Yes, dengue fever is a notifiable disease, meaning healthcare providers are required to report cases to public health authorities."
+},
+{
+"instruction": "What is the role of mosquitoes in the transmission of dengue fever?",
+"input": "",
+"output": "Mosquitoes, particularly Aedes mosquitoes, serve as vectors for the dengue virus, transmitting it from infected individuals to healthy individuals."
+},
+{
+"instruction": "Can dengue fever be diagnosed based on symptoms alone?",
+"input": "",
+"output": "Diagnosing dengue fever based on symptoms alone is challenging because the symptoms are similar to those of other viral illnesses. Laboratory tests are needed for confirmation."
+},
+{
+"instruction": "Can dengue fever be transmitted during pregnancy?",
+"input": "",
+"output": "Yes, dengue fever can be transmitted from a pregnant woman to her fetus during pregnancy or during childbirth."
+},
+{
+"instruction": "Can dengue fever cause birth defects?",
+"input": "",
+"output": "There is evidence suggesting that dengue fever during pregnancy can increase the risk of adverse outcomes, including birth defects."
+},
+{
+"instruction": "What is the role of platelet count in dengue fever?",
+"input": "",
+"output": "Platelet count is often used as an indicator of disease severity in dengue fever. Low platelet count can occur in some cases."
+},
+{
+"instruction": "Is there a specific diet recommended for dengue fever patients?",
+"input": "",
+"output": "There is no specific diet for dengue fever patients. However, a balanced diet that includes fluids and nutritious foods is important for recovery."
+},
+{
+"instruction": "Can dengue fever cause encephalitis?",
+"input": "",
+"output": "While rare, dengue fever can lead to complications such as encephalitis, which is inflammation of the brain."
+},
+{
+"instruction": "What are the key preventive measures for dengue fever in endemic areas?",
+"input": "",
+"output": "Key preventive measures in endemic areas include reducing mosquito breeding sites, using bed nets, and implementing community-based mosquito control programs."
+},
+{
+"instruction": "Can dengue fever be transmitted through sexual contact?",
+"input": "",
+"output": "Although dengue fever is primarily transmitted by mosquitoes, there have been rare cases of sexual transmission of the virus."
+},
+{
+"instruction": "What is the role of travel history in diagnosing dengue fever?",
+"input": "",
+"output": "Travel history to dengue-endemic areas can help healthcare providers in diagnosing and considering dengue fever as a possible cause of symptoms."
+},
+{
+"instruction": "Can dengue fever cause respiratory symptoms?",
+"input": "",
+"output": "Respiratory symptoms are not typical of dengue fever. However, in some severe cases, respiratory distress may occur."
+},
+{
+"instruction": "Can dengue fever affect children?",
+"input": "",
+"output": "Yes, dengue fever can affect people of all ages, including children. However, severe dengue is more common in children."
+},
+{
+"instruction": "What are the laboratory tests used for diagnosing dengue fever?",
+"input": "",
+"output": "Laboratory tests for diagnosing dengue fever include NS1 antigen test, PCR test, and antibody tests (IgM and IgG)."
+},
+{
+"instruction": "Can dengue fever cause liver damage?",
+"input": "",
+"output": "In severe cases of dengue fever, liver damage can occur, leading to elevated liver enzymes and jaundice."
+},
+{
+"instruction": "What is the role of the World Health Organization (WHO) in dengue fever control?",
+"input": "",
+"output": "The World Health Organization plays a key role in providing guidance, support, and coordination for dengue fever control and prevention efforts globally."
+},
+{
+"instruction": "What is the difference between dengue fever and chikungunya?",
+"input": "",
+"output": "Dengue fever and chikungunya are both mosquito-borne viral diseases, but they are caused by different viruses and have some differences in symptoms."
+},
+{
+"instruction": "Can dengue fever cause eye problems?",
+"input": "",
+"output": "In rare cases, dengue fever can cause eye problems such as redness, pain, and vision disturbances."
+},
+{
+"instruction": "What is the role of the community in dengue fever prevention?",
+"input": "",
+"output": "The community plays a crucial role in dengue fever prevention by participating in source reduction activities, promoting awareness, and supporting vector control measures."
+},
+{
+"instruction": "Can dengue fever be transmitted through breastfeeding?",
+"input": "",
+"output": "There is no evidence to suggest that dengue fever can be transmitted through breastfeeding. Breastfeeding is encouraged for its numerous benefits."
+},
+{
+"instruction": "What are some complications of dengue fever in children?",
+"input": "",
+"output": "Complications of dengue fever in children can include severe dengue, organ damage, fluid accumulation, and respiratory distress."
+},
+{
+"instruction": "What is the role of the Aedes mosquito in dengue fever transmission?",
+"input": "",
+"output": "The Aedes mosquito serves as the primary vector for dengue fever transmission, acquiring the virus by biting an infected individual and spreading it to other people."
+},
+{
+"instruction": "Can dengue fever cause miscarriage or stillbirth?",
+"input": "",
+"output": "There is limited evidence suggesting that dengue fever during pregnancy may increase the risk of miscarriage or stillbirth."
+},
+{
+"instruction": "What are the complications of dengue hemorrhagic fever?",
+"input": "",
+"output": "Complications of dengue hemorrhagic fever can include bleeding, organ failure, and shock, which can be life-threatening if not treated promptly."
+},
+{
+"instruction": "What is the role of vector control in dengue fever prevention?",
+"input": "",
+"output": "Vector control measures, such as eliminating mosquito breeding sites and using insecticides, are essential in reducing the Aedes mosquito population and preventing dengue fever transmission."
+},
+{
+"instruction": "Can dengue fever cause neurological symptoms?",
+"input": "",
+"output": "In rare cases, dengue fever can lead to neurological symptoms such as encephalitis, meningitis, or Guillain-Barré syndrome."
+},
+{
+"instruction": "What is the recommended duration of hospitalization for dengue fever patients?",
+"input": "",
+"output": "The duration of hospitalization for dengue fever patients varies depending on the severity of the illness and the individual's response to treatment."
+},
+{
+"instruction": "What is the role of public health agencies in dengue fever control?",
+"input": "",
+"output": "Public health agencies play a vital role in surveillance, prevention, and response to dengue fever outbreaks, including educating the public and coordinating control measures."
+},
+{
+"instruction": "Can dengue fever cause heart problems?",
+"input": "",
+"output": "In severe cases, dengue fever can lead to heart problems such as myocarditis, inflammation of the heart muscle."
+},
+{
+"instruction": "What is the role of climate change in dengue fever transmission?",
+"input": "",
+"output": "Climate change can influence dengue fever transmission by affecting mosquito populations, their geographic distribution, and the length of the transmission season."
+},
+{
+"instruction": "Can dengue fever cause infertility?",
+"input": "",
+"output": "There is no evidence to suggest that dengue fever can directly cause infertility in either men or women."
+},
+{
+"instruction": "What are the factors that contribute to dengue fever outbreaks?",
+"input": "",
+"output": "Factors that contribute to dengue fever outbreaks include high mosquito population, inadequate vector control, urbanization, and climate conditions."
+},
+{
+"instruction": "Can dengue fever be transmitted through organ transplantation?",
+"input": "",
+"output": "There have been rare cases of dengue fever transmission through organ transplantation. Precautions are taken to screen donors and recipients for dengue virus."
+},
+{
+"instruction": "What is the role of the immune system in dengue fever?",
+"input": "",
+"output": "The immune system plays a crucial role in dengue fever, as both the immune response and the immune system's dysregulation can contribute to disease severity."
+}
 ]
